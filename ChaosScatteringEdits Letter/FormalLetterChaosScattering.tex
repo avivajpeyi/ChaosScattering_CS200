@@ -1,0 +1,108 @@
+
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+	\normalfont \normalsize 
+	\textsc{CS 200} \\ [25pt] % Your university, school and/or department name(s)
+	\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+	\huge Changes Made After Peer Review \\ % The assignment title
+	\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Avi Vajpeyi} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+	
+	\maketitle % Print the title
+	
+	%----------------------------------------------------------------------------------------
+	%	PROBLEM 1
+	%----------------------------------------------------------------------------------------
+	
+	\section{Grammatical and Spelling Errors}
+	
+	The peer review from Yunjia and Dr.Byrnes was helpful in pointing out grammatical errors, and confusing sections in the paper. Dr. Byrnes' review pointed out several mistakes such as extraneous words, and missing words. for example, she pointed out that in the sentence ``...such as migratory pattern of birds..," I was missing ``the" before ``migratory.'' Additionally, she pointed out that when a figure is referenced, it should be referenced with ``Figure \#'', rather than ``figure \#.'' There were several other grammatical, and spelling errors that she highlighted in my paper, which I corrected. 
+	
+	\section{Comprehension of the Paper}
+	Dr. Byrnes identified several sections of the paper that were unclear. Below is a list of several aspects she found unclear:
+	
+	\begin{enumerate}
+		\item The introduction for numerical integration and discussions on Ordinary Differential Equations.
+		\item How Euler-Cromer and the Runge Kutta algorithms work with step code.
+		\item The difference between chaotic and non-chaotic regions in a graph, and why chaotic regions have been defined as `speckled'.
+		
+	\end{enumerate}
+	
+	\subsection{Numerical Integration Section}
+	To explain the process of numerical integration better, I added a new subsection called `Integration in Simulations,' which compared the `Midpoint Rule' to the integration algorithms discussed in this paper. This introduced numerical integration by providing a simple explanation of how the midpoint rule works, with the help of a diagram. It then elaborated on how the functions we integrate in this simulation are dependent on time, and hence deal with `time steps.'
+	
+	\subsection{Euler-Cromer and Runge-Kutta}
+	I added an image of the implementation of the Euler-Cromer algorithm into the paper to help show the reader how the algorithm is used in my simulation. Additionally, I included the step code for the Runge-Kutta algorithm, as advised by Dr. Byrnes. Although I think that this might confuse the reader, I can see how it might be important for the user to see the algorithm. As I did not want to elaborate on how this algorithm works (as it would take a lot of space), I asked the reader to refer to an article discussing the algorithm.
+	
+	\subsection{Chaotic Versus Non Chaotic}
+	Dr. Byrnes pointed out that I had not explained what chaotic nature is. Hence, I edited my original explanation for what a chaotic region is, in the `Simple Example' section of the paper, to help the definition stand out more. I also tried to further explain the difference between the chaotic and the non chaotic trends that we can observe. Additionally, Dr. Byrnes pointed out that I used the word `speckled' to describe the chaotic regions in the graphs for the scattering angle against the impact parameter. As this wording was vague, I changed `speckled regions' to `regions where the scattering angle fluctuates rapidly.' 
+	
+	\subsection{Energy Plots}
+	After talking to Dr. Byrnes about how the energy of a particle is used to check the integration accuracy, I decided to write a short section on the energy of the particle. I provided two graphs showing that with the Runge-Kutta 4 algorithm, the energy remains constant. \\
+	
+	
+	\subsection{Table of Figures}
+	Dr. Byrnes also suggested inserting a list of figures before the table of contents, as my paper incorporated numerous diagrams. Hence, this was also added to the final version of my paper.
+	
+	\subsection {Other Edits}
+	
+	There were several other edits that I made - for example, I changed some of the figures (for example, the screen shots of the simulation), to match more recent versions. I also edited some of the captions so that they were more readable. I also added an appendix with the code for my simulation.
+	
+	
+	
+	
+	%------------------------------------------------
+	
+	
+	%----------------------------------------------------------------------------------------
+	%	PROBLEM 2
+	%----------------------------------------------------------------------------------------
+	
+	
+	%----------------------------------------------------------------------------------------
+	
+\end{document}

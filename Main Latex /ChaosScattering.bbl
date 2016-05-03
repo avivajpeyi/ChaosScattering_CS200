@@ -1,0 +1,57 @@
+\begin{thebibliography}{10}
+
+\bibitem{computationalText}
+Konstantinos~N Anagnostopoulos.
+\newblock {\em Computational Physics, Vol I: A Practical Introduction to
+  Computational Physics and Scientific Computing}, volume~1.
+\newblock Konstantinos Anagnostopoulos, 2014.
+
+\bibitem{OldRunge}
+DG~Bettis.
+\newblock Runge-kutta algorithms for oscillatory problems.
+\newblock {\em Zeitschrift f{\"u}r angewandte Mathematik und Physik ZAMP},
+  30(4):699--704, 1979.
+
+\bibitem{comparingODE}
+Alex Clement, Amy Clement, Greg Fenchel, Jeff Fenchel, Jayson Lynch, and
+  NM~Supercomputing Challenge.
+\newblock Comparing numerical integration methods.
+\newblock 2008.
+
+\bibitem{ODE}
+Earl~A Coddington.
+\newblock {\em An introduction to ordinary differential equations}.
+\newblock Courier Corporation, 2012.
+
+\bibitem{:/content/aip/journal/cip/4/2/10.1063/1.4822901}
+Harvey Gould and Jan Tobochnik.
+\newblock More on fractals and chaos: Multifractals.
+\newblock {\em Computers in Physics}, 4(2):202--207, 1990.
+
+\bibitem{jose1998classical}
+Jorge~V Jos{\'e} and Eugene~J Saletan.
+\newblock {\em Classical dynamics: a contemporary approach}.
+\newblock Cambridge University Press, 1998.
+
+\bibitem{WeatherSimulation}
+Edward~N Lorenz.
+\newblock {\em The essence of chaos}.
+\newblock University of Washington Press, 1995.
+
+\bibitem{chaoticIntro}
+Edward Ott and Tam{\'a}s T{\'e}l.
+\newblock Chaotic scattering: An introduction.
+\newblock {\em Chaos: An Interdisciplinary Journal of Nonlinear Science},
+  3(4):417--426, 1993.
+
+\bibitem{pang2006introduction}
+Tao Pang.
+\newblock {\em An introduction to computational physics}.
+\newblock Cambridge University Press, 2006.
+
+\bibitem{GRice}
+Tolga Yalçinkaya and Ying‐Cheng Lai.
+\newblock Chaotic scattering.
+\newblock {\em Computers in Physics}, 9(5):511--539, 1995.
+
+\end{thebibliography}

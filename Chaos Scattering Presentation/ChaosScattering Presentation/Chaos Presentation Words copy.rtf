@@ -1,0 +1,199 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Calibri;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww8600\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+
+\b \ul TITLE
+\b0 \ulnone \
+For my JR IS I have been studying chaotic scattering, with the help of a simulation modelling a skateboarder riding across hills and valleys\
+\
+\
+
+\b \ul SLIDE 1: Chaos Theory + Pic of Ed
+\b0 \ulnone \
+Chaotic scattering comes from a branch of non linear dynamics, called Chaos theory, a filed discovered accidentally by Edward Lorenz, when he was running a simulation of weather he created.\
+
+\f1 \
+
+\b \ul SLIDE 2: RUN OF CONVECTION CURRENT SIMULATION
+\b0 \ulnone \
+\
+His simulation, similar to the one on the screen, would map out the path of convection currents. \
+\
+ One day, he rounded one of his several input parameters from 6DP to 3DP, and  to his surprise, saw something like this\'85\
+\
+\
+
+\b \ul SLIDE 3: TWO DIFFERENT PLOTS OF CONVECTION CURRENTS
+\b0 \ulnone \
+\
+he saw that changing the initial values by a small amount resulted in a big difference in the final result. \
+\
+The difference between the two plots is that the initial parameters have been altered by a factor of 1/100th\
+\
+
+\b \ul SLIDE 4 : LORENZ EPIPHANY
+\b0 \ulnone \
+\
+DR. L was shocked by these results, and came to realise that small changes in complex systems can result in very different outcomes. \
+\
+His paper on this topic gave birth to the butterfly effect, and more importantly, Chaos theory, the field looking at the unpredictable nature of complex systems. \
+\
+\
+
+\b \ul SLIDE 5: CHAOS SCATTERING
+\b0 \ulnone \
+\
+ chaos scattering, is just a branch of chaos theory, in which when we change the initial trajectory of something by a small amount, we get really different trajectories. \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul \ulc0 USES OF SCATTERING\ulnone \
+This field of study was created to help understand the paths of comets through solar systems, and other things such as the traversal of a alpha particle through a gold foil. \
+\
+\ul GASPARD RICE MODEL\ulnone \
+the fig on the left is taken from the first study in this field, were a rice grain is sent from an initial y position, denoted as \'91b\'92, into a region of three discs. In this region, the rice particle bounces around, before eventually exiting at some angels from the x axis. \
+\
+This is set up in a very similar manner to my simulation for the skater\
+\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 \ul \ulc0 SLIDE 6: ODEs
+\b0 \ulnone \
+So before we look at the simulation, I would like to talk about how motion is modelled \
+\
+So on the screen, we have Newton\'92s second law :  Force = mass times acceleration, written as an ordinary differential equation. Its a differential eq since acceleration is written as the second derivative of position. \
+\
+Now if we integrate this twice, we will get the position of the mass in the equation. \
+\
+  This is what I use in my simulation to calculate the position of the skater.\
+\
+\
+
+\b \ul SLIDE 7: NUMERICAL INTEGRATION
+\b0 \ulnone \
+\
+The way we do this integration is very similar to Simpson\'92s method, where we evaluate the value of the function at different points, and then add areas up. The area gives us the value of the integral.\
+\
+There are different  ways of doing the integration. I used methods known as  Euler Cromer, and different types of  Runge Kuttas\
+\
+\
+
+\b \ul SHOW SOFTWARE SLIDE 8
+\b0 \ulnone \
+\
+*set at b=0.71*\
+\
+So here we have the simulation of the skateboarder ( the black dot) and the skatepark, with the valleys as seen by the contour plot. The position on the y axis is known as \'91b\'92 the impact parameter. \
+\
+Currently this is using Euler Cromer integration. If we switch to the others, see how the path changes? \
+*Toggle bw dif integration*\
+\
+Range Kutta 4 has the most accurate path, which we will discuss later.\
+\
+*zoom out*\
+\
+Lets see what happens as we move the initial path by small values \
+*start moving around*\
+- it appears as though even small changes makes the path change by drastic amounts!\
+\
+\
+*change to hills now*\
+Now lets switch the skatepark so that instead of valleys, we have hills.\
+As you can see, now the skateboarders path has changed drastically. However, we still see that by changing the initial position by small amounts, the final path changes.\
+\
+*start moving around - leave at a direct position near the hill *\
+One more quick thing, lets see what happens as we increase the initial velocity of the particle. \
+\
+*increase the velocity slowly, showing how as energy increases path changes.* \
+We see that the skateboarder slowly gets more and more energy to go up to a higher point on the hill, and eventually can jump across the hill. \
+\
+*change to valleys - decrease the velocity *\
+And also, I just wanted to show how the we get really cool paths for the skateboarder if we switch back to the valleys at low velocities.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 \ulc0 SLIDE 9: RESULTS
+\b0 \ulnone \
+\
+With the simulation, I was able to study a lot of stuff, such as how changing the velocity of the skateboarder affects the system, chnign the initial position, studying the energies etc. However, we\'92ll only be talking about some stuff.\
+\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul \ulc0 Chaotic vs non \ulnone -  \
+\
+So here is a plot comparing the iy position of the skateboarder agains the scattering angle. \
+\
+As the initial y position is increased, the initial scattering angle changes in a steady, smooth, manner.  \
+\
+However, there are 
+\b certain regions in which small increments
+\b0  in the initial position cause the scattering angle to
+\b  fluctuate very rapidly.
+\b0  This is the
+\b  chaotic regions
+\b0  in the graph.\
+\
+\
+\ul FRACTAL -\ulnone  Whats even more interesting, is that if we 
+\b take a chaotic region, 
+\b0 and try to 
+\b expand it 
+\b0 ,we  
+\b see more chaotic regions
+\b0  , 
+\b then even more
+\b0 \
+and 
+\b more of the same repeating pattern
+\b0 . \
+\
+This shows us that the
+\b  nature of this system actually has fractal properties! 
+\b0 \
+\
+\ul Energy \ulnone -  So now some of you might be wondering 
+\b how I know that my data is actually accurate and not just a bunch of baloney.
+\b0 \
+\
+So 
+\b I can argue that it is accurate with Runge Kutta 4, because if I plot the energy of the skateboarder as he travels through the park, I see that this is constant. 
+\b0 \
+\
+ 
+\b energy cannot be created or destroyed.
+\b0  \
+\
+THUS , if skateboarder\'92s energy conserved, this means that the integration is done correctly, \
+\
+ hence the paths taken by the skateboarder is accurate. \
+\
+\
+\
+This is just a zoom in of the same energy plot, showing that there is some variation in the energy but 
+\b not so much that the integration becomes greatly inaccurate. 
+\b0 \
+\
+
+\b Slide 10 : CONCLUDING NOTES
+\b0 \
+\
+Yup, so thats pretty much it!  I hope you guys found that interesting, and if anything, realised that \
+- its not actually butterflies which cause chaos in our world, \
+- but the sensitive nature of systems which causes the chaos.\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+}

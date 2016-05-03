@@ -1,0 +1,35 @@
+\documentclass[11pt]{article}	% The default font size is 10pt.
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry} 
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{url}		% This package allows LaTeX to format web & email addresses nicely. 
+					% It formats the font, breaks lines rationally, and typesets symbols correctly.
+
+\def\B{\textsc{Bib}\negthinspace\TeX}	% This defines a command to print the name BibTeX nicely!!
+
+\begin{document}
+
+\title{{\textit{Chaotic Scattering for a Sliding Mass in a Complex Topography}}: An Annotated Bibliography}	% In your version, take out the italics.
+\author{Avi Vajpeyi}
+\date{\today}		% If you omit this command, LaTeX automatically uses today's date.
+
+\maketitle
+
+\section{Introduction}
+The focus of my project is to gain a better understanding of chaotic systems, by looking at a simulation of a particle, scattering due to the presence of four hills in its path. There will be one impact parameter, or initial trajectory, which causes the particle to scatter, and this will be plotted against the scattering angle to study the regions of normal and chaotic behavior of the system. It is predicted that the chaotic behavior is fractal in nature, which is also something of interest for this research.
+
+\nocite{*} 	%This command tells LaTeX to include ALL your BibTeX entries, even if you did not 
+		% \cite{} them, a practice which is strongly discouraged in mathematical papers. 
+		% We use it here because the listing of all the entries is the purpose of this assignment!
+
+\bibliographystyle{plain-annote}		% You will need to have the external file plain-annote.bst (downloaded 
+							% from our Moodle page) in the same folder as this file. If in the future 
+							% you do not want to include annotations, use the following command instead:
+
+%\bibliographystyle{plain}		% Using this bibliography style will ignore the annotations.
+
+\bibliography{FermatsLastTheoremBib}		% This file should be replaced with the name of your .bib file.
+
+\end{document}
